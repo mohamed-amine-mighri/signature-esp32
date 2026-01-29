@@ -1,0 +1,15 @@
+menu "Transport layer configuration"
+
+    choice LAYER_VARIANT
+        prompt "Select transport variant"
+        default MQTT_LAYER
+
+        config UART_LAYER
+            bool "UART_LAYER"
+
+        config MQTT_LAYER
+            bool "MQTT_LAYER"
+
+    endchoice
+
+endmenu
